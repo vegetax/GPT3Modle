@@ -1,0 +1,9 @@
+1. OpenAI's watermarking tool is designed to embed an "unnoticeable secret signal" into AI-generated text, indicating where the text came from and making it harder to pass off AI-generated text as if it came from a human.
+
+2. OpenAI's watermarking tool works by leveraging a cryptographic function running at the server level to "pseudorandomly" select the next token. This would still look random to humans, but anyone possessing the "key" to the cryptographic function would be able to uncover a watermark.
+
+3. The ethical concerns associated with AI-generated text include the potential for it to be used to write high-quality phishing emails and harmful malware, or cheat at school assignments.
+
+4. The key limitations of OpenAI's watermarking tool include that it is server-side, meaning it wouldn't necessarily work with all text-generating systems, and that it would be difficult to imperceptibly fingerprint AI-generated text.
+
+5. Adversaries can work around OpenAI's watermarking tool by rewording, using synonyms, etc.

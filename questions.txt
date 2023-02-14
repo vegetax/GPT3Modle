@@ -1,0 +1,5 @@
+1. What is OpenAI's watermarking tool designed to do?
+2. How does OpenAI's watermarking tool work?
+3. What are the ethical concerns associated with AI-generated text?
+4. What are the key limitations of OpenAI's watermarking tool?
+5. How can adversaries work around OpenAI's watermarking tool?
