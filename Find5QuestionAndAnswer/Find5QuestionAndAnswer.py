@@ -12,7 +12,7 @@ def save_file(filepath, content):
         outfile.write(content)
 
 
-openai.api_key = open_file("openaiapikey.txt")
+openai.api_key = open_file("../openaiapikey.txt")
 
 
 def gpt_3(prompt):
@@ -29,6 +29,7 @@ def gpt_3(prompt):
     return text
 
 
+# 第一步：输入文章，找到问题
 info = open_file("input.txt")
 prompt1 = open_file("prompt1.txt").replace('<<FEED>>', info)
 print(prompt1)
@@ -36,6 +37,7 @@ questions = gpt_3(prompt1)
 print(questions)
 save_file("questions.txt", questions)
 
+# 第二步：回答问题
 questions2 = open_file("questions.txt")
 prompt2 = open_file("prompt2.txt").replace(
     '<<FEED>>', info).replace('<<QS>>', questions2)
